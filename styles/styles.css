@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  /* Color Scheme */
+  --color-blueDK-: #05386b;
+  --color-greenDK-: #379683;
+  --color-green-: #5cdb95;
+  --color-greenPale-: #8ee4af;
+  --color-tan-: #edf5e1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: url("./pictures/ball.avif") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background-color: var(--color-blueDK-);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* navbar */
+.navbar-main {
+  background-color: var(--color-blueDK-);
+  color: var(--color-tan-);
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navbar-item a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding-right: 40px;
+  color: var(--color-tan-);
+}
+
+.navbar-pic {
+  width: 100%;
+  height: auto;
+}
+/* Hero Section */
+.hero-wrap {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+}
