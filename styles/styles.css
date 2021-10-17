@@ -50,6 +50,7 @@ p {
   justify-content: center;
   padding: 10px;
   background-color: black;
+  width: 100%;
 }
 .navbar-container ul {
   display: flex;
@@ -70,6 +71,70 @@ p {
   text-transform: uppercase;
 }
 
+.navbar-container:hover {
+  box-shadow: 0 0.75em 1em -0.4em aqua;
+}
+.navbar-container ul li a:hover {
+  color: aqua;
+}
+/* 
+.navbar-container ul li a {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-container ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: "";
+  color: transparent;
+  background: aqua;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.navbar-container ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+} */
+
+/* Button */
+.btn-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  border: 3px solid aqua;
+  padding: 10px 0;
+  width: 120px;
+  cursor: pointer;
+  text-decoration: none;
+  color: aqua;
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.btn:hover {
+  transition: 0.3 solid ease-out;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 0.75em 1em -0.4em aqua;
+  transform: translateY(-0.25em);
+}
 /* --------------- Hero Section --------------- */
 .heroSection-wrap {
   width: 100%;
@@ -125,7 +190,7 @@ p {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 200px;
   }
 }
 
@@ -141,7 +206,7 @@ p {
 }
 
 /* --------------- Projects --------------- */
-.projects {
+#projects {
   width: auto;
   height: 100vh;
   background-color: white;
