@@ -321,3 +321,26 @@ p {
 .copywrite-text {
   font-size: 0.75rem;
 }
+
+/* --------------- Responsive --------------- */
+@media only screen and (min-width: 800px) {
+  .heroSection-bio {
+    width: 600px;
+  }
+
+  .project-techIcons ul li i {
+    padding: 0px 80px;
+  }
+
+  .info-container {
+    width: 800px;
+  }
+
+  .info {
+    padding: 0 100px;
+  }
+
+  .pageLinks {
+    padding: 0 100px;
+  }
+}
