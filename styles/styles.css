@@ -28,12 +28,23 @@ body {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 6rem;
   color: white;
 }
 
-p {
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  padding-top: 10px;
   font-size: 1rem;
+  color: white;
+  letter-spacing: 0.09em;
+}
+
+p {
+  font-size: 1.2rem;
   color: #d3d3d3;
 }
 
@@ -81,11 +92,13 @@ p {
 
 /* Button */
 .btn-container {
+  padding-top: 5vh;
   width: 100%;
-  height: 100px;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .btn {
   border: 3px solid white;
@@ -143,7 +156,7 @@ p {
 .heroSection h1,
 h3,
 p {
-  padding: 20px 30px;
+  padding: 5px 35px;
 }
 
 .heroSection-intent {
@@ -151,26 +164,36 @@ p {
   color: whitesmoke;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid aqua; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 100%; /* Gives that scrolling effect as the typing happens */
+
+  /* The typwriter cursor */
+  /* border-right: 0.15em solid aqua;  */
+
+  /* Keeps the content on a single line */
+  white-space: nowrap;
+
+  /* Gives that scrolling effect as the typing happens */
+  margin: 0 100%;
+
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+
+  /* Animation */
+  /* animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite; */
+
   padding: 5px;
 }
 
 /* The typing effect */
-@keyframes typing {
+/* @keyframes typing {
   from {
     width: 0;
   }
   to {
     width: 200px;
   }
-}
+} */
 
 /* The typewriter cursor effect */
-@keyframes blink-caret {
+/* @keyframes blink-caret {
   from,
   to {
     border-color: transparent;
@@ -178,7 +201,7 @@ p {
   50% {
     border-color: aqua;
   }
-}
+} */
 
 /* --------------- Projects --------------- */
 .projects-container {
@@ -230,7 +253,7 @@ p {
 .footer {
   background-color: black;
   width: 100%;
-  height: 50vh;
+  height: 15vh;
   color: white;
   display: flex;
   align-items: center;
@@ -239,8 +262,8 @@ p {
 }
 
 .info-container {
-  width: 100%;
-  height: 100px;
+  width: 100vw;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,7 +273,7 @@ p {
   width: 100px;
   text-decoration: none;
   color: white;
-  padding-left: 30px;
+  padding-left: 15px;
   border-left: 3px solid gray;
 }
 
@@ -275,19 +298,19 @@ p {
 }
 
 .footer-icons {
-  padding-top: 10px;
+  padding-top: 40px;
 }
 
 .footer-icons ul li {
   display: inline-block;
-  width: 50px;
-  padding: 0 20px;
+  width: 100px;
+  padding: 0 10px;
   font-size: 2.5rem;
   transition: transform 0.2s;
 }
 
 .footer-icons ul li:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .footer-icons ul li a:hover {
