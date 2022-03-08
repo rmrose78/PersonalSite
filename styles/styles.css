@@ -182,6 +182,14 @@ p {
   padding: 5px;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  border-bottom: 1.5px solid gray;
+}
+
 /* The typing effect */
 /* @keyframes typing {
   from {
