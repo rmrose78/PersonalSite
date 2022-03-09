@@ -190,27 +190,6 @@ p {
   border-bottom: 1.5px solid gray;
 }
 
-/* The typing effect */
-/* @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 200px;
-  }
-} */
-
-/* The typewriter cursor effect */
-/* @keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: aqua;
-  }
-} */
-
 /* --------------- Projects --------------- */
 .projects-container {
   color: #323330;
